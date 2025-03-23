@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{478F17AE-7263-41B0-A6AD-ACB058D4E4B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Eventmanagement</RootNamespace>
+    <AssemblyName>Eventmanagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aboutus.Designer.cs">
+      <DependentUpon>Aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRequestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRequestsForm.Designer.cs">
+      <DependentUpon>AdminRequestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEvent.Designer.cs">
+      <DependentUpon>AEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anniversary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anniversary.Designer.cs">
+      <DependentUpon>Anniversary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BEvent.Designer.cs">
+      <DependentUpon>BEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirthdayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirthdayForm.Designer.cs">
+      <DependentUpon>BirthdayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firstpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firstpage.Designer.cs">
+      <DependentUpon>Firstpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeForm.Designer.cs">
+      <DependentUpon>OfficeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBookForm.Designer.cs">
+      <DependentUpon>UserBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserNotificationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserNotificationsForm.Designer.cs">
+      <DependentUpon>UserNotificationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRequestForm.Designer.cs">
+      <DependentUpon>UserRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fs.Designer.cs">
+      <DependentUpon>Fs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oevent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oevent.Designer.cs">
+      <DependentUpon>Oevent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mevent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mevent.Designer.cs">
+      <DependentUpon>Mevent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeddingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeddingList.Designer.cs">
+      <DependentUpon>WeddingList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aboutus.resx">
+      <DependentUpon>Aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRequestsForm.resx">
+      <DependentUpon>AdminRequestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEvent.resx">
+      <DependentUpon>AEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anniversary.resx">
+      <DependentUpon>Anniversary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BEvent.resx">
+      <DependentUpon>BEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirthdayForm.resx">
+      <DependentUpon>BirthdayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firstpage.resx">
+      <DependentUpon>Firstpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fs.resx">
+      <DependentUpon>Fs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oevent.resx">
+      <DependentUpon>Oevent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeForm.resx">
+      <DependentUpon>OfficeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event.resx">
+      <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mevent.resx">
+      <DependentUpon>Mevent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserBookForm.resx">
+      <DependentUpon>UserBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserNotificationsForm.resx">
+      <DependentUpon>UserNotificationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRequestForm.resx">
+      <DependentUpon>UserRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeddingList.resx">
+      <DependentUpon>WeddingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
